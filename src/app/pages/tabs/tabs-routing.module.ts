@@ -15,6 +15,10 @@ const routes: Routes = [
               {
                 path: '',
                 loadChildren: './tab1/tab1.module#Tab1PageModule'
+              },
+              {
+                  path: 'area',
+                  loadChildren: './tab1/area/area.module#AreaPageModule'
               }
             ]
         },
@@ -39,7 +43,9 @@ const routes: Routes = [
     path: '',
     redirectTo: '/tabs/tab1',
     pathMatch: 'full'
-  }
+  },
+  { path: 'area', loadChildren: './tab1/area/area.module#AreaPageModule' }
+
 ];
 
 @NgModule({

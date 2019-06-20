@@ -1,6 +1,288 @@
 <ion-content>
-  <div style="height: 100%; background-color: black;">
-    <div style="height: 50%; background-color: green"></div>
-    <div style="height: 50%; background-color: blue"></div>
+
+  <div style="height: 100%;">
+  
+    <div style="height: 50%;">
+      <div style="height: 15%;"></div>
+      <div style="margin: 1em;">
+        <div style="font-size: 3em; font-weight: 500">Convertium</div>
+        <div style="height: 10px;"></div>
+        <div style="font-size: .7em; font-weight: 500">&nbsp; Powered by Petrichor Analytics</div>
+      </div>
+    </div>
+    
+    <div style="height: 50%">
+      <div style="margin: 1em; font-size: 1em; font-weight: 500;">Conversion categories</div>
+
+      <ion-slides [options]="sliderOptions">
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true" (click)="goToArea()">
+            <ion-card-header>
+              <ion-card-title>Area</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                mm<sup>2</sup> km<sup>2</sup> mi<sup>2</sup>...
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Length</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                mm, in, mi ...
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Mass</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                mcg, kg, t ..
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Volume</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                cl<sup>3</sup>, ml, gal ... 
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Volume flow rate</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                cm<sup>3</sup>/s, ml/s, gal/s ... 
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Temperature</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                  &deg;c, &deg;f, k ...  
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Time</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                s, m, year 
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Frequency</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                Hz, rpm, deg/s ... 
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Speed</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                m/s, km/h, ft/s ... 
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Pace</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                s/m, min/km, s/ft ...
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Pressure</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                pa, torr, psi ... 
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Digital Storage</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                byte, MB, GB ...
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Illuminance</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                lx | ft-cd
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Parts-per</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                ppm, ppb, ppt ...
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Voltage</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                v, mv, kv ...
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Current</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                a, ma, ka ...
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Power</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                W, mW, kW ...
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Apparent Power</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                VA, mVA, kVA ...
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Reactive Power</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                VAR, mVAR, kVAR ...
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Energy</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                Wh, J, kJ
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Reactive Energy</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                VARh, mVARh, kVARh ...
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card mode="ios" button="true">
+            <ion-card-header>
+              <ion-card-title>Angle</ion-card-title>
+              <div style="height: 5px;"></div>
+              <ion-card-subtitle>
+                deg, rad, arcsec ...
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+      </ion-slides>
+    </div>
+  
   </div>
+
 </ion-content>
